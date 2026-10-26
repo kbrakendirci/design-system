@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/demo_card"
+        style="@style/Widget.Folio.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/card_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/folio_cash_flow_period"
+                android:textAppearance="@style/TextAppearance.Folio.Label"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/card_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/folio_cash_flow_net"
+                android:textAppearance="@style/TextAppearance.Folio.Body"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/card_supporting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/folio_cash_flow_breakdown"
+                android:textAppearance="@style/TextAppearance.Folio.Label"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="?attr/folioColorBackground"
+        app:cardCornerRadius="16dp"
+        app:strokeColor="?attr/folioColorOutline"
+        app:strokeWidth="1dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/folio_info_card"
+            android:textAppearance="@style/TextAppearance.Folio.Body"
+            android:textSize="14sp" />
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

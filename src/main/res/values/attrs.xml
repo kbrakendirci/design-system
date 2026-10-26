@@ -1,0 +1,13 @@
+<resources>
+    <attr name="folioColorBackground" format="color" />
+    <attr name="folioColorSurface" format="color" />
+    <attr name="folioColorSelected" format="color" />
+    <attr name="folioColorOutline" format="color" />
+    <attr name="folioColorOnSurface" format="color" />
+    <attr name="folioColorMuted" format="color" />
+    <attr name="folioColorPrimary" format="color" />
+    <attr name="folioColorPositive" format="color" />
+    <attr name="folioColorError" format="color" />
+    <attr name="folioColorOnPrimary" format="color" />
+    <attr name="folioFontFamily" format="reference|string" />
+</resources>

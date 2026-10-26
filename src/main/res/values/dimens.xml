@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="folio_space_1">4dp</dimen>
+    <dimen name="folio_space_2">8dp</dimen>
+    <dimen name="folio_space_3">12dp</dimen>
+    <dimen name="folio_space_4">16dp</dimen>
+    <dimen name="folio_space_5">24dp</dimen>
+    <dimen name="folio_radius_control">12dp</dimen>
+    <dimen name="folio_radius_card">24dp</dimen>
+    <dimen name="folio_height_button">48dp</dimen>
+</resources>

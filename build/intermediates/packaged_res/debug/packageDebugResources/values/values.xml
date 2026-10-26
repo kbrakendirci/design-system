@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color" name="folioColorBackground"/>
+    <attr format="color" name="folioColorError"/>
+    <attr format="color" name="folioColorMuted"/>
+    <attr format="color" name="folioColorOnPrimary"/>
+    <attr format="color" name="folioColorOnSurface"/>
+    <attr format="color" name="folioColorOutline"/>
+    <attr format="color" name="folioColorPositive"/>
+    <attr format="color" name="folioColorPrimary"/>
+    <attr format="color" name="folioColorSelected"/>
+    <attr format="color" name="folioColorSurface"/>
+    <attr format="reference|string" name="folioFontFamily"/>
+    <color name="folio_background">#F9FAF7</color>
+    <color name="folio_error">#925447</color>
+    <color name="folio_ink">#19221E</color>
+    <color name="folio_muted">#606A64</color>
+    <color name="folio_on_primary">#FFFFFF</color>
+    <color name="folio_outline">#DFE4DC</color>
+    <color name="folio_positive">#246144</color>
+    <color name="folio_primary">#285E48</color>
+    <color name="folio_surface">#F0F2EC</color>
+    <color name="folio_surface_selected">#DDEBDE</color>
+    <dimen name="folio_height_button">48dp</dimen>
+    <dimen name="folio_radius_card">24dp</dimen>
+    <dimen name="folio_radius_control">12dp</dimen>
+    <dimen name="folio_space_1">4dp</dimen>
+    <dimen name="folio_space_2">8dp</dimen>
+    <dimen name="folio_space_3">12dp</dimen>
+    <dimen name="folio_space_4">16dp</dimen>
+    <dimen name="folio_space_5">24dp</dimen>
+    <string name="folio_back">Back</string>
+    <string name="folio_cash_flow_breakdown">Income 6,200 ₺     Expense 2,380 ₺</string>
+    <string name="folio_cash_flow_net">Net cash flow  +3,820 ₺</string>
+    <string name="folio_cash_flow_period">This month · October</string>
+    <string name="folio_empty_message">Start by adding your first entry.</string>
+    <string name="folio_empty_title">No transactions yet</string>
+    <string name="folio_field_category">Category</string>
+    <string name="folio_field_transaction_name">Transaction name</string>
+    <string name="folio_filter_all">All</string>
+    <string name="folio_filter_expense">Expense</string>
+    <string name="folio_filter_income">Income</string>
+    <string name="folio_info_card">Information · Stored on this device</string>
+    <string name="folio_nav_home">Home</string>
+    <string name="folio_nav_settings">Settings</string>
+    <string name="folio_nav_statistics">Statistics</string>
+    <string name="folio_nav_transactions">Transactions</string>
+    <string name="folio_retry">Try again</string>
+    <string name="folio_sample_back_title">Transaction details</string>
+    <string name="folio_sample_category">Groceries</string>
+    <string name="folio_sample_transaction_amount">−86.40 ₺</string>
+    <string name="folio_sample_transaction_meta">Groceries · Oct 19</string>
+    <string name="folio_sample_transaction_name">Grocery shopping</string>
+    <style name="TextAppearance.Folio.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/folioColorOnSurface</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+    </style>
+    <style name="TextAppearance.Folio.Label" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">?attr/folioColorMuted</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+    </style>
+    <style name="TextAppearance.Folio.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?attr/folioColorOnSurface</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+    </style>
+    <style name="Theme.Folio.DesignSystem" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="folioColorBackground">@color/folio_background</item>
+        <item name="folioColorSurface">@color/folio_surface</item>
+        <item name="folioColorSelected">@color/folio_surface_selected</item>
+        <item name="folioColorOutline">@color/folio_outline</item>
+        <item name="folioColorOnSurface">@color/folio_ink</item>
+        <item name="folioColorMuted">@color/folio_muted</item>
+        <item name="folioColorPrimary">@color/folio_primary</item>
+        <item name="folioColorPositive">@color/folio_positive</item>
+        <item name="folioColorError">@color/folio_error</item>
+        <item name="folioColorOnPrimary">@color/folio_on_primary</item>
+        <item name="folioFontFamily">sans</item>
+        <item name="colorPrimary">?attr/folioColorPrimary</item>
+        <item name="colorOnPrimary">?attr/folioColorOnPrimary</item>
+        <item name="colorSecondary">?attr/folioColorSelected</item>
+        <item name="colorOnSecondary">?attr/folioColorPrimary</item>
+        <item name="colorSurface">?attr/folioColorSurface</item>
+        <item name="colorOnSurface">?attr/folioColorOnSurface</item>
+        <item name="colorOutline">?attr/folioColorOutline</item>
+        <item name="colorError">?attr/folioColorError</item>
+        <item name="android:colorBackground">?attr/folioColorBackground</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+        <item name="fontFamily">?attr/folioFontFamily</item>
+        <item name="materialButtonStyle">@style/Widget.Folio.Button.Primary</item>
+    </style>
+    <style name="Widget.Folio.Button.Destructive" parent="Widget.Material3.Button">
+        <item name="backgroundTint">?attr/folioColorError</item>
+        <item name="android:textColor">?attr/folioColorOnPrimary</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+    <style name="Widget.Folio.Button.Icon" parent="Widget.Material3.Button.TonalButton">
+        <item name="backgroundTint">?attr/folioColorSelected</item>
+        <item name="android:textColor">?attr/folioColorPrimary</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+    <style name="Widget.Folio.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">?attr/folioColorPrimary</item>
+        <item name="android:textColor">?attr/folioColorOnPrimary</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+    <style name="Widget.Folio.Button.Secondary" parent="Widget.Material3.Button.TonalButton">
+        <item name="backgroundTint">?attr/folioColorSelected</item>
+        <item name="android:textColor">?attr/folioColorPrimary</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+    <style name="Widget.Folio.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">?attr/folioColorSurface</item>
+        <item name="cardCornerRadius">@dimen/folio_radius_card</item>
+        <item name="strokeColor">?attr/folioColorOutline</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+    <style name="Widget.Folio.Field" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">?attr/folioColorSurface</item>
+        <item name="boxStrokeColor">?attr/folioColorOutline</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="hintTextColor">?attr/folioColorMuted</item>
+    </style>
+    <style name="Widget.Folio.Navigation" parent=""/>
+    <style name="Widget.Folio.Navigation.Item" parent="Widget.Folio.Navigation"/>
+    <style name="Widget.Folio.Navigation.Item.Icon" parent="Widget.Folio.Navigation.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/folioColorOnSurface</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Widget.Folio.Navigation.Item.Label" parent="Widget.Folio.Navigation.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/folioColorMuted</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+</resources>

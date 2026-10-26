@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="folio_background">#111612</color>
+    <color name="folio_error">#E4ADA0</color>
+    <color name="folio_ink">#E4EAE1</color>
+    <color name="folio_muted">#ADB8AE</color>
+    <color name="folio_on_primary">#163824</color>
+    <color name="folio_outline">#39443C</color>
+    <color name="folio_positive">#A7D4B3</color>
+    <color name="folio_primary">#A7D4B3</color>
+    <color name="folio_surface">#1D241F</color>
+    <color name="folio_surface_selected">#304B39</color>
+</resources>

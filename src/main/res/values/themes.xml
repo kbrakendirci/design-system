@@ -1,0 +1,116 @@
+<resources>
+    <style name="Theme.Folio.DesignSystem" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="folioColorBackground">@color/folio_background</item>
+        <item name="folioColorSurface">@color/folio_surface</item>
+        <item name="folioColorSelected">@color/folio_surface_selected</item>
+        <item name="folioColorOutline">@color/folio_outline</item>
+        <item name="folioColorOnSurface">@color/folio_ink</item>
+        <item name="folioColorMuted">@color/folio_muted</item>
+        <item name="folioColorPrimary">@color/folio_primary</item>
+        <item name="folioColorPositive">@color/folio_positive</item>
+        <item name="folioColorError">@color/folio_error</item>
+        <item name="folioColorOnPrimary">@color/folio_on_primary</item>
+        <item name="folioFontFamily">sans</item>
+        <item name="colorPrimary">?attr/folioColorPrimary</item>
+        <item name="colorOnPrimary">?attr/folioColorOnPrimary</item>
+        <item name="colorSecondary">?attr/folioColorSelected</item>
+        <item name="colorOnSecondary">?attr/folioColorPrimary</item>
+        <item name="colorSurface">?attr/folioColorSurface</item>
+        <item name="colorOnSurface">?attr/folioColorOnSurface</item>
+        <item name="colorOutline">?attr/folioColorOutline</item>
+        <item name="colorError">?attr/folioColorError</item>
+        <item name="android:colorBackground">?attr/folioColorBackground</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+        <item name="fontFamily">?attr/folioFontFamily</item>
+        <item name="materialButtonStyle">@style/Widget.Folio.Button.Primary</item>
+    </style>
+
+    <style name="TextAppearance.Folio.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?attr/folioColorOnSurface</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+    </style>
+    <style name="TextAppearance.Folio.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/folioColorOnSurface</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+    </style>
+    <style name="TextAppearance.Folio.Label" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">?attr/folioColorMuted</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+    </style>
+
+    <style name="Widget.Folio.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">?attr/folioColorPrimary</item>
+        <item name="android:textColor">?attr/folioColorOnPrimary</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+    <style name="Widget.Folio.Button.Secondary" parent="Widget.Material3.Button.TonalButton">
+        <item name="backgroundTint">?attr/folioColorSelected</item>
+        <item name="android:textColor">?attr/folioColorPrimary</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+    <style name="Widget.Folio.Button.Destructive" parent="Widget.Material3.Button">
+        <item name="backgroundTint">?attr/folioColorError</item>
+        <item name="android:textColor">?attr/folioColorOnPrimary</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+    <style name="Widget.Folio.Button.Icon" parent="Widget.Material3.Button.TonalButton">
+        <item name="backgroundTint">?attr/folioColorSelected</item>
+        <item name="android:textColor">?attr/folioColorPrimary</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Widget.Folio.Navigation" parent="" />
+    <style name="Widget.Folio.Navigation.Item" parent="Widget.Folio.Navigation" />
+    <style name="Widget.Folio.Navigation.Item.Label" parent="Widget.Folio.Navigation.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/folioColorMuted</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Widget.Folio.Navigation.Item.Icon" parent="Widget.Folio.Navigation.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/folioColorOnSurface</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">?attr/folioFontFamily</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Widget.Folio.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">?attr/folioColorSurface</item>
+        <item name="cardCornerRadius">@dimen/folio_radius_card</item>
+        <item name="strokeColor">?attr/folioColorOutline</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+    <style name="Widget.Folio.Field" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">?attr/folioColorSurface</item>
+        <item name="boxStrokeColor">?attr/folioColorOutline</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="hintTextColor">?attr/folioColorMuted</item>
+    </style>
+</resources>
